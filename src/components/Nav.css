@@ -1,0 +1,45 @@
+#slider {
+  width: 100%;
+  min-height: 50px;
+  background-color: #FFE600;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  transition: transform .8s
+              cubic-bezier(0, .25, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
+}
+ 
+#slider.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+ 
+#slider.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+}
+ 
+#slider h2 span {
+  color: rgb(5, 77, 41);
+  margin-left: 15px;
+  text-decoration: none;
+  float: right;
+  padding: 10px;
+}
+ 
+#slider h2 span:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+      font-size: 300%; 
+  }
+
+  a {
+      display: block;
+  }
+
+  
+}
