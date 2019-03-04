@@ -11,6 +11,11 @@
     /* src: url('../BackyardCamping.otf'); */
 }
 
+.homepage {
+	max-width: 1800px;
+	
+}
+
 .nav {
     position: absolute;
     top: 10px;
@@ -93,12 +98,18 @@ h1 {
     color: snow;
 }
 
-.web {
+.WD {
     font-family: 'Courier New', Courier, monospace;
     float: right;
-    
 }
 
+.web{
+	color: rgb(175, 182, 245)
+}
+
+.dev {
+	color: rgb(141, 230, 148)	
+}
 
 .subheader {
     border-bottom: 4px solid lightblue;

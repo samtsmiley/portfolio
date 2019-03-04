@@ -17,46 +17,80 @@ class Homepage extends Component {
       Connect:false,
       visible: false
     };
+
     this.handleMouseDown = this.handleMouseDown.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.offMenuMouseDown = this.offMenuMouseDown.bind(this);
+    this.handleAboutMeMouseDown = this.handleAboutMeMouseDown.bind(this);
+    this.handlePortfolioMouseDown = this.handlePortfolioMouseDown.bind(this);
+    this.handleConnectMouseDown = this.handleConnectMouseDown.bind(this);
+
   }
   
   handleMouseDown(e) {
     this.toggleMenu();
- 
     console.log("clicked");
     e.stopPropagation();
   }
 
   toggleMenu() {
-    this.setState(
-      {
-        visible: !this.state.visible
-      }
-    );
+    this.setState({visible: !this.state.visible});
   }
-   
+  
+  offMenuMouseDown() {
+    if (this.state.visible) this.setState({visible: false}); 
+  }
+
+  handleAboutMeMouseDown(){
+    this.setState({
+      AboutMe: true,
+      Projects: false,
+      Connect: false,
+    });
+  }
+
+  handlePortfolioMouseDown(){
+    this.setState({
+      AboutMe: false,
+      Projects: true,
+      Connect: false,
+    });
+  }
+
+  handleConnectMouseDown(){
+    this.setState({
+      AboutMe: false,
+      Projects: false,
+      Connect: true,
+    });
+  }
   render() {
-   
     return (
-      <div className="homepage ">
-        <SmileyButton handleMouseDown={this.handleMouseDown}/>
-        <Nav handleMouseDown={this.handleMouseDown}
-          menuVisibility={this.state.visible}/>
+      <div className="homepage " onMouseDown={this.offMenuMouseDown}>
+        <SmileyButton 
+          handleMouseDown={this.handleMouseDown}/>
+        <Nav 
+          handleMouseDown={this.handleMouseDown}
+          menuVisibility={this.state.visible}
+          handleAboutMeMouseDown={this.handleAboutMeMouseDown}
+          handlePortfolioMouseDown={this.handlePortfolioMouseDown}
+          handleConnectMouseDown={this.handleConnectMouseDown}/>
         <div className="homepageHeader">
         <div className='homepageImage'/>
-
           <div className="headerContent">
             <h1 className='samHeader'>Sam Smiley</h1>
           </div>
           <div className='me'>
             <span className='outdoor'>Outdoor Enthusiast</span> 
-            <span className='web'>Web Developer</span>
+            <span className='WD'>
+              <span className='web'>Web</span>
+              <span className='dev'> Developer</span>
+            </span>
           </div>
         </div>
-        {this.state.AboutMe && <AboutMe/>}
-        {this.state.Projects && <Projects/>}
-        {this.state.Connect && <Connect/>}
+        {this.state.AboutMe && <AboutMe aboutMeVisibility={this.state.AboutMe}/>}
+        {this.state.Projects && <Projects projectsVisibility={this.state.Projects}/>}
+        {this.state.Connect && <Connect ConnectVisibility={this.state.Connect}/>}
 
 
       </div>
