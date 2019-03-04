@@ -66,7 +66,7 @@ class Homepage extends Component {
   }
   render() {
     return (
-      <div className="homepage " onMouseDown={this.offMenuMouseDown}>
+      <div className="homepage" onMouseDown={this.offMenuMouseDown}>
         <SmileyButton 
           handleMouseDown={this.handleMouseDown}/>
         <Nav 
