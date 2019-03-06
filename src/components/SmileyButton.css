@@ -1,6 +1,6 @@
 .smileyButton {
   position: fixed;
-  right: 10px;
+  right: calc(50% - 890px);
   top: 10px;
   z-index: 1;
   border-radius: 50%;
@@ -8,4 +8,10 @@
 
 .smileyButton:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1800px) {
+  .smileyButton {
+    right: 10px;
+  }
 }

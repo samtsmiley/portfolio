@@ -5,6 +5,8 @@ import AboutMe from './AboutMe'
 import Projects from './Projects'
 import Connect from './Connect'
 import SmileyButton from './SmileyButton'
+import Footer from './Footer';
+
 
 
 class Homepage extends Component {
@@ -66,16 +68,17 @@ class Homepage extends Component {
   }
   render() {
     return (
-      <div className="homepage" onMouseDown={this.offMenuMouseDown}>
-        <SmileyButton 
-          handleMouseDown={this.handleMouseDown}/>
+      <div className='homepage' onMouseDown={this.offMenuMouseDown}>
+        <div className='smileyButt'>
+          <SmileyButton 
+            handleMouseDown={this.handleMouseDown}/>
+        </div>
         <Nav 
           handleMouseDown={this.handleMouseDown}
           menuVisibility={this.state.visible}
           handleAboutMeMouseDown={this.handleAboutMeMouseDown}
           handlePortfolioMouseDown={this.handlePortfolioMouseDown}
           handleConnectMouseDown={this.handleConnectMouseDown}/>
-        <div className="homepageHeader">
         <div className='homepageImage'/>
           <div className="headerContent">
             <h1 className='samHeader'>Sam Smiley</h1>
@@ -87,12 +90,12 @@ class Homepage extends Component {
               <span className='dev'> Developer</span>
             </span>
           </div>
-        </div>
-        {this.state.AboutMe && <AboutMe aboutMeVisibility={this.state.AboutMe}/>}
-        {this.state.Projects && <Projects projectsVisibility={this.state.Projects}/>}
+        {/* </div> */}
+        <AboutMe aboutMeVisibility={this.state.AboutMe}/>
+        <Projects projectsVisibility={this.state.Projects}/>
         {this.state.Connect && <Connect ConnectVisibility={this.state.Connect}/>}
 
-
+        {/* <Footer /> */}
       </div>
     );
   }

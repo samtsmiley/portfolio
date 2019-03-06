@@ -1,32 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react'
 import './Project.css';
 
-// class Project extends Component {
 
-    
-//   render() {
-//     return (
-//       <section className="project">
+export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id }) => {
+  const whichImgdisplay = displayLeft
+    ? 'projectImgLeft'
+    : 'projectImgRight'
+  
+    const whichProjectDisplay = displayLeft
+    ? 'projectAboutRight'
+    : 'projectAboutLeft'
 
-//         <header className="subheader">
-//           <h2>Projects</h2>
-//         </header>
-        
-       
-
-//       </section>
-//     );
-//   }
-// }
-
-// export default Project;
-const SingleProject = (props) => {
-  return (
-  <li className="gallery-images">
-    <img
-      src={props.project.img}
-      onClick={props.openModal}
-    />
-  </li>
-  );
-  }
+    return (
+      <div >
+        <div className='project' key={id}>
+          <img className={whichImgdisplay}  src={image} alt=''/>
+          <div className={whichProjectDisplay} >
+            <h3>
+              {title}
+            </h3> 
+            <p>{desc}</p>
+            <p classname='strong'>My Part:</p>
+            <p>{me}</p>
+            <p classname='strong'>Coloaborators:</p>
+            <p>{colab}</p>
+            <p classname='strong'>Tech:</p>
+            <p>{tech}</p>
+          </div>
+      </div>
+     </div>
+    )
+}

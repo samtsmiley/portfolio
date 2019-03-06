@@ -13,10 +13,10 @@ class Nav extends Component {
       <div id="menuSlider"
            onMouseDown={this.props.handleMouseDown} 
            className={visibility}>
-        <h2>
-          <span onMouseDown={this.props.handleAboutMeMouseDown}>About Me</span>
-          <span onMouseDown={this.props.handlePortfolioMouseDown}>Portfolio</span>
-          <span onMouseDown={this.props.handleConnectMouseDown}>Connect</span>
+        <h2 className='menuItems'>
+          <span className='menuItem' onMouseDown={this.props.handleAboutMeMouseDown}>About Me</span>
+          <span className='menuItem' onMouseDown={this.props.handlePortfolioMouseDown}>Portfolio</span>
+          <span className='menuItem' onMouseDown={this.props.handleConnectMouseDown}>Connect</span>
         </h2>
       </div>
     );
