@@ -9,9 +9,9 @@
   font-weight: bold;
 }
 
-.indent {
-  /* margin-left: 15px */
-}
+/* .indent {
+  margin-left: 15px
+} */
 
 .projectImgLeft {
   max-width: 500px;
@@ -35,6 +35,15 @@
   width: 60%;
   float: left;
   padding-bottom: 5px;
+}
+
+.projectTitle {
+  font-size: 150%;
+}
+
+.gitHubLink {
+  font-size: 120%;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 1000px) {
