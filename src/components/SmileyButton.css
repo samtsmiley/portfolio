@@ -4,7 +4,7 @@
   top: 10px;
   z-index: 1;
   border-radius: 50%;
-  /* box-shadow: 4px 4px 8px lightslategray; */
+  box-shadow: 4px 4px 8px lightslategray;
 }
 
 .smileyButton:hover {
