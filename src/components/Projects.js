@@ -58,7 +58,7 @@ export class Projects extends React.Component {
       <section  id='projects' className={projectsVisibility}>
         <h2 className='projectsTitle'>My Recent Projects</h2>
         {projects}
-        <p className='clickSmiley'>Click the Smiley Face for more ;)</p>
+        {/* <p className='clickSmiley'>Click the Smiley Face for more ;)</p> */}
       </section>
     );
   }

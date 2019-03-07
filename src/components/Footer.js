@@ -4,8 +4,9 @@ import './Footer.css'
 export default () => {
     return (
       <div className='footer'>
-      <p>Thanks For Stopping By</p>
-      <p>Have a Great Day</p>
+        <p>Click the Smiley Face for more ;)</p>
+        <p>Thanks For Stopping By</p>
+        <p>Have a Great Day</p>
       </div>
     )
 }
