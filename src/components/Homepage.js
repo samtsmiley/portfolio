@@ -5,9 +5,6 @@ import AboutMe from './AboutMe'
 import Projects from './Projects'
 import Connect from './Connect'
 import SmileyButton from './SmileyButton'
-import Footer from './Footer';
-
-
 
 class Homepage extends Component {
 
@@ -93,7 +90,6 @@ class Homepage extends Component {
         <AboutMe aboutMeVisibility={this.state.AboutMe}/>
         <Projects projectsVisibility={this.state.Projects}/>
         <Connect connectVisibility={this.state.Connect}/>
-        {/* <Footer /> */}
       </div>
     );
   }

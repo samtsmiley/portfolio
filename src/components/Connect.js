@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Connect.css';
 import github from '../images/github-logo.svg';
 import linkedin from '../images/linkedin-logo.svg'; 
-import Footer from './Footer';
 
 class Connect extends Component {
 

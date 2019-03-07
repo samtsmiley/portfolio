@@ -61,7 +61,6 @@ p {
   left: 1em;
 }
 
-
 .me {
   position: absolute;
   margin: auto;
@@ -97,13 +96,8 @@ p {
 	color: rgb(141, 230, 148)	
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   * {
     font-size: 100%
-  }
-	a {
-		display: block;
-	}
-
-    
+  }    
 }
