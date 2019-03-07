@@ -7,6 +7,5 @@ export default () => {
       <p>Thanks For Stopping By</p>
       <p>Have a Great Day</p>
       </div>
-      
     )
 }

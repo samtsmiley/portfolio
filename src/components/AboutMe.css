@@ -16,10 +16,6 @@
   margin-bottom: 100px;
 
 }
-
-.aboutMe {
-  
-}
    
 #aboutMe.hide {
   transform: translateY(-950px);
@@ -33,7 +29,7 @@
 
 .intro {
   font-size: 200%;
-  padding-top:60px;
+  padding-top:75px;
   padding-bottom:5px;
   text-decoration: underline;
 }

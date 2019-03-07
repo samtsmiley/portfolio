@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Connect.css';
 import github from '../images/github-logo.svg';
 import linkedin from '../images/linkedin-logo.svg'; 
-import Footer from './Footer';
 
 class Connect extends Component {
 
@@ -31,11 +30,11 @@ class Connect extends Component {
         />
         <p>And checkout out my social accounts:</p>
         <div className='socialMediaIcons'>
-          <a href='https://www.linkedin.com/in/sam-smiley-374935aa/' rel='noopener noreferrer' target='_blank'>
-            <img src={github} alt='Linkedin Logo' className='socialMediaIcon'/>
-          </a>
           <a href='https://github.com/samtsmiley' rel='noopener noreferrer' target='_blank'>
-            <img src={linkedin} alt='Github Logo' className='socialMediaIcon'/>
+            <img src={github} alt='Github Logo' className='socialMediaIcon'/>
+          </a>
+          <a href='https://www.linkedin.com/in/sam-smiley-374935aa/' rel='noopener noreferrer' target='_blank'>
+            <img src={linkedin} alt='Linkedin Logo' className='socialMediaIcon'/>
           </a> 
         </div>
       </section>
