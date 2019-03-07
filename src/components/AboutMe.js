@@ -59,7 +59,7 @@ class AboutMe extends Component {
                 I dropped out and moved to a little ski town in Colorado, Steamboat Springs. There, 
                 my love for the outdoors was satisfied and I found a job that complimented my aptitudes. 
                 I became a Ski Lift Mechanic. After a great run living in the mountains my wife and I 
-                moved to Portland, OR to experience the city life.After Working a few different manufacuring 
+                moved to Portland, OR to experience the city life. After Working a few different manufacuring 
                 jobs I needed something more challangeing, it was time for a carrer change.
               </p>
               <h3>Present</h3>
