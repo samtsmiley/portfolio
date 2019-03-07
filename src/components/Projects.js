@@ -22,7 +22,7 @@ export class Projects extends React.Component {
       },
       {
         title: 'DothraKit',
-        desc: 'With the final season of GOT coming out it\'s time to brush up on your Dothraki phrases! DothraKIT uses a spaced repeitition algorithm to ensure you are learning efficiently. The rules are simple: learn the word, get it right, you live. Or else...well, best not to get on Khal\'s bad side. You can log in with username: Sammy, password: 0123456789.',
+        desc: 'With the final season of GOT coming out it\'s time to brush up on your Dothraki phrases! DothraKIT uses a spaced repetition algorithm to ensure you are learning efficiently. The rules are simple: learn the word, get it right, you live. Or else...well, best not to get on Khal\'s bad side. You can log in with username: Sammy, password: 0123456789.',
         tech: 'React, Redux, Node, Express, Mocha/Chai, and Mongo',
         me: 'With just one partner on this project we shared alot of the responsibilities',
         displayLeft: false,
