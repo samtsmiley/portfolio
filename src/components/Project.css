@@ -5,6 +5,10 @@
   margin-bottom: 15px;
 }
 
+.strong {
+  font-weight: bold;
+}
+
 .projectImgLeft {
   max-width: 500px;
   width: 40%;

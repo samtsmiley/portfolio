@@ -69,7 +69,7 @@ p {
 	margin-right: auto;
 	left: 10%;
 	right: 10%;
-	min-height: 80px;
+  min-height: 80px;
 	max-width: 1000px;
 	background-color: rgb(5, 77, 41);
 	border-radius: 10px;
@@ -80,7 +80,7 @@ p {
 .outdoor {
 	font-family: outdoorFont;
 	float: left; 
-	color: snow;
+  color: snow;  
 }
 
 .WD {
@@ -97,7 +97,7 @@ p {
 }
 
 @media screen and (max-width: 520px) {
-  * {
-    font-size: 100%
-  }    
+  .me {
+    font-size: 275%;
+  }   
 }

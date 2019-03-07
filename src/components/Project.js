@@ -16,9 +16,11 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
         <div className='project' key={id}>
           <img className={whichImgdisplay}  src={image} alt=''/>
           <div className={whichProjectDisplay} >
-            <h3>
-              {title}
-            </h3> 
+            <a href={link} rel='noopener noreferrer' target='_blank'>
+              <h3>
+                {title}
+              </h3>
+            </a> 
             <p>{desc}</p>
             <p className='strong'>My Part:</p>
             <p>{me}</p>
@@ -26,6 +28,11 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
             <p>{colab}</p>
             <p className='strong'>Tech:</p>
             <p>{tech}</p>
+            <a href={git} rel='noopener noreferrer' target='_blank'>
+              <p>
+                GitHub repo
+              </p>
+            </a> 
           </div>
       </div>
      </div>
