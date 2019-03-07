@@ -13,7 +13,7 @@ export class Projects extends React.Component {
         title: 'SLP Student Tracker',
         desc: 'SLP Student Tracker is an app made for Speech Language Pathologists to keep track of students by recording a SOAP note. With a history of notes a visual graph will show students progress',
         tech: 'React, Redux, Node, Express, Mocha/Chai, and Mongo',
-        me: 'All of it. I am in the process of refactoring this app using React Hooks for state management',
+        me: 'All of it. I am in the process of refactoring this app using React Hooks for state management.',
         colab: 'Just Me',
         displayLeft: true,
         image: slpst,

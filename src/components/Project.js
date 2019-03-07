@@ -23,11 +23,11 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
             </a> 
             <p>{desc}</p>
             <p className='strong'>My Part:</p>
-            <p>{me}</p>
+            <p className='indent'>{me}</p>
             <p className='strong'>Coloaborators:</p>
-            <p>{colab}</p>
+            <p className='indent'>{colab}</p>
             <p className='strong'>Tech:</p>
-            <p>{tech}</p>
+            <p className='indent'>{tech}</p>
             <a href={git} rel='noopener noreferrer' target='_blank'>
               <p>
                 GitHub repo

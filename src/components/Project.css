@@ -9,6 +9,10 @@
   font-weight: bold;
 }
 
+.indent {
+  /* margin-left: 15px */
+}
+
 .projectImgLeft {
   max-width: 500px;
   width: 40%;
