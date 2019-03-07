@@ -33,7 +33,7 @@ export class Projects extends React.Component {
       },
       {
         title: 'Game-A-Tron',
-        desc: 'Game-A-Tron is a web application that helps people to gamify their lives. Players are able to create and play games. It was a colaborative project with 4 of us.',
+        desc: 'Game-A-Tron is a web application that helps people to gamify their lives. Players are able to create and play games. It was a collaborative  project with 4 of us.',
         tech: 'React, Redux, Node, Express, Mocha/Chai, and Mongo',
         me: 'I brought the app concept to the table. I built many front-end components and modified the back end to get proper responces form fetch requests',
         displayLeft: true,
