@@ -54,9 +54,8 @@ class AboutMe extends Component {
             <div className="about"> 
               <h3>Past</h3>
               <p>
-                I am drawn to how things work and the outdoors. Growing up I studied to persue a carrer 
-                in engineering and went to Virginia Tech. Although I was enjoying my engineering classes 
-                I became restless. As John Muir said "The Mountains are calling and I must go."
+                Growing up in South Carolina I studied to persue a carrer in engineering. After attending Virginia 
+                Tech for a few semesters I became restless. As John Muir said "The Mountains are calling and I must go."
                 I dropped out and moved to a little ski town in Colorado, Steamboat Springs. There, 
                 my love for the outdoors was satisfied and I found a job that complimented my aptitudes. 
                 I became a Ski Lift Mechanic. After a great run living in the mountains my wife and I 
