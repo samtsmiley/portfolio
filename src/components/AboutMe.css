@@ -16,6 +16,10 @@
   margin-bottom: 100px;
 
 }
+
+.aboutMe {
+  
+}
    
 #aboutMe.hide {
   transform: translateY(-950px);

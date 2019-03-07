@@ -1,8 +1,8 @@
 .project {
-  /* min-width: 1400px; */
-  min-height: 204px;
+  min-width: 1400px;
   display: inline-block;
   border-bottom: #FFE600  solid 10px;
+  margin-bottom: 15px;
 }
 
 
@@ -15,6 +15,8 @@
 .projectAboutRight {
   width: 60%;
   float: right;
+  padding-bottom: 5px;
+  /* text-align: right; */
 }
  
 .projectImgRight {
@@ -26,6 +28,7 @@
 .projectAboutLeft {
   width: 60%;
   float: left;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -33,25 +36,16 @@
     min-height: 204px;
     border-bottom: #FFE600  solid 10px;
   }
-  
-  
   .projectImgLeft {
     width: 100%;
-    float: left;
-  }
-   
+  } 
   .projectAboutRight {
     width: 100%;
-    float: right;
   }
-   
   .projectImgRight {
     width: 100%;
-    float: right;
   }
-    
   .projectAboutLeft {
     width: 100%;
-    float: left;
   }
 }

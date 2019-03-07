@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './SmileyButton.css';
-import smiley from '../smiley.svg'
-import superSmiley from '../superSmiley.svg'
+import smiley from '../images/smiley.svg'
+import superSmiley from '../images/superSmiley.svg'
  
 class SmileyButton extends Component {
   constructor(props){

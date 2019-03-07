@@ -90,11 +90,9 @@ class Homepage extends Component {
               <span className='dev'> Developer</span>
             </span>
           </div>
-        {/* </div> */}
         <AboutMe aboutMeVisibility={this.state.AboutMe}/>
         <Projects projectsVisibility={this.state.Projects}/>
-        {this.state.Connect && <Connect ConnectVisibility={this.state.Connect}/>}
-
+        <Connect connectVisibility={this.state.Connect}/>
         {/* <Footer /> */}
       </div>
     );

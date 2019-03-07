@@ -20,11 +20,11 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
               {title}
             </h3> 
             <p>{desc}</p>
-            <p classname='strong'>My Part:</p>
+            <p className='strong'>My Part:</p>
             <p>{me}</p>
-            <p classname='strong'>Coloaborators:</p>
+            <p className='strong'>Coloaborators:</p>
             <p>{colab}</p>
-            <p classname='strong'>Tech:</p>
+            <p className='strong'>Tech:</p>
             <p>{tech}</p>
           </div>
       </div>

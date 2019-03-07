@@ -1,9 +1,10 @@
 import React from "react";
 import './Projects.css';
 import Project from './Project'
-import slpst from '../slpst.svg'
-import game from '../game.svg'
-import dothrakit from '../dothrakit.svg'
+import slpst from '../images/slpst.svg'
+import game from '../images/game.svg'
+import dothrakit from '../images/dothrakit.svg'
+import Footer from "./Footer";
 
 
 
@@ -58,9 +59,16 @@ export class Projects extends React.Component {
     }
       
     return (
+      <div>
       <div  id='projects' className={projectsVisibility}>
         <h2 className='projectsTitle'>My Recent Projects</h2>
         {projects}
+        {/* <div className='projfooter'>
+          <p>Thanks For Stopping By</p>
+          <p>Have a Great Day</p>
+        </div> */}
+      </div>
+      {/* <Footer/> */}
       </div>
     );
   }

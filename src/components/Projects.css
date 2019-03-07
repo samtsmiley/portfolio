@@ -10,7 +10,7 @@
   left: 3%;
   right: 3%;
   border-radius: 5px;
-  /* margin-top: 60px; */
+  margin-bottom: 80px;
 }
 
 #projects.hide {
@@ -24,6 +24,19 @@
   overflow: hidden;
   transition-delay: 1s;
   top: 580px;
+}
+.projfooter{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgb(5, 77, 41);
+  text-align: center;
+  color: white;
+  z-index: 20;
+  min-height: 80px;
+  max-height: 80px;
 }
 /* #projects.hide {
   top: 100%;
@@ -49,6 +62,11 @@
   #projects.show {
     top: 620px;
   } 
+  .project {
+    min-height: 204px;
+    border-bottom: #FFE600  solid 10px;
+  }
+
 }
 
 @media screen and (max-width: 520px) {

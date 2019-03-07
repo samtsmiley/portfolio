@@ -29,7 +29,7 @@ p {
 }
 
 .homepageImage {
-  background: url('../backGround1.jpg'); 
+  background: url('../images/backGround1.jpg'); 
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
