@@ -1,0 +1,20 @@
+.footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgb(5, 77, 41);
+  text-align: center;
+  color: white;
+  z-index: 20;
+  min-height: 80px;
+  max-height: 80px;
+}
+
+
+@media screen and (max-height: 720px) {
+  .footer {
+    display: none;
+  }
+ }

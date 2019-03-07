@@ -1,0 +1,65 @@
+#connect {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: transform .8s
+              cubic-bezier(0, .25, 0, 1);
+  overflow: scroll;
+  z-index: -1;
+  text-align: center;
+  top: 580px;
+}
+ 
+#connect.hide {
+  transform: translate3d(-100vw, 0, 0);  
+  overflow: hidden;
+  transition-delay: .5s;  
+}
+ 
+#connect.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+  top: 580px;
+  transition-delay: .75s;  
+}
+
+.connectTitle {
+  text-decoration: underline;
+  padding: 15px;
+}
+
+input {
+  background:rgba(0,0,0,0);
+  border:none;
+  font-size: 150%;
+  padding: 10px;
+  padding-left: 60px;
+}
+
+input:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.socialMediaIcons {
+  height: 150px;
+  margin-bottom: 80px;
+}
+
+.socialMediaIcon {
+  height: 100%;
+  padding:20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+ #connect.show {
+  top: 620px;
+ }
+}
+
+@media screen and (max-width: 520px) {
+  #connect.show {
+    top: 740px;
+   }
+}

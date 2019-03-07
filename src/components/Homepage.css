@@ -1,0 +1,109 @@
+@font-face {
+  font-family: outdoorFont;
+  src: url('../Lumberjack.otf');
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h2 {
+  font-size: 200%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 150%;
+  padding: 10px;
+}
+
+p {
+  font-size: 120%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.homepage {
+  max-width: 1800px;
+  font-family: 'Ubuntu';
+}
+
+.homepageImage {
+  background: url('../images/backGround1.jpg'); 
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center; 
+  width: 100%;
+  max-width: 1800px;
+  min-height: 500px;
+  position: absolute;
+  border-bottom: #FFE600 solid 20px;
+  border-radius: 5px;		
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.headerContent {
+  min-height: 500px;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+.samHeader {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+
+.me {
+  position: absolute;
+  margin: auto;
+	top: 470px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 10%;
+	right: 10%;
+	min-height: 80px;
+	max-width: 1000px;
+	background-color: rgb(5, 77, 41);
+	border-radius: 10px;
+	font-size: 300%;
+	padding: 10px;
+}
+
+.outdoor {
+	font-family: outdoorFont;
+	float: left; 
+	color: snow;
+}
+
+.WD {
+	font-family: 'Courier New', Courier, monospace;
+	float: right;
+}
+
+.web{
+	color: rgb(175, 182, 245)
+}
+
+.dev {
+	color: rgb(141, 230, 148)	
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 100%
+  }
+	a {
+		display: block;
+	}
+
+    
+}

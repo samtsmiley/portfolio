@@ -1,0 +1,51 @@
+.project {
+  min-width: 1400px;
+  display: inline-block;
+  border-bottom: #FFE600  solid 10px;
+  margin-bottom: 15px;
+}
+
+
+.projectImgLeft {
+  max-width: 500px;
+  width: 40%;
+  float: left;
+}
+ 
+.projectAboutRight {
+  width: 60%;
+  float: right;
+  padding-bottom: 5px;
+  /* text-align: right; */
+}
+ 
+.projectImgRight {
+  max-width: 500px;
+  width: 40%;
+  float: right;
+}
+  
+.projectAboutLeft {
+  width: 60%;
+  float: left;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    min-height: 204px;
+    border-bottom: #FFE600  solid 10px;
+  }
+  .projectImgLeft {
+    width: 100%;
+  } 
+  .projectAboutRight {
+    width: 100%;
+  }
+  .projectImgRight {
+    width: 100%;
+  }
+  .projectAboutLeft {
+    width: 100%;
+  }
+}
