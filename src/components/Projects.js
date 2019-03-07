@@ -48,17 +48,17 @@ export class Projects extends React.Component {
       return <Project key={index} {...project} iScored={true}/>
     })
     
-    var projectsVisibility = "hide";
+    var projectsVisibility = 'hide';
  
     if (this.props.projectsVisibility) {
-      projectsVisibility = "show";
+      projectsVisibility = 'show';
     }
       
     return (
       <section  id='projects' className={projectsVisibility}>
         <h2 className='projectsTitle'>My Recent Projects</h2>
         {projects}
-        <p>Click the Smiley Face for more ;)</p>
+        <p className='clickSmiley'>Click the Smiley Face for more ;)</p>
       </section>
     );
   }

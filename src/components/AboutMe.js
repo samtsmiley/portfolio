@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import './AboutMe.css';
 import Footer from './Footer';
-// import Footer from './Footer';
 
 class AboutMe extends Component {
-
     
   render() {
-    var aboutMeVisibility = "hide";
+    var aboutMeVisibility = 'hide';
  
     if (this.props.aboutMeVisibility) {
-      aboutMeVisibility = "show";
+      aboutMeVisibility = 'show';
     }
     return (
       <div>
