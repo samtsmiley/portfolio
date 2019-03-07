@@ -17,8 +17,8 @@ export class Projects extends React.Component {
         colab: 'Just Me',
         displayLeft: true,
         image: slpst,
-        link: 'https://dothrakit.herokuapp.com/',
-        git: 'https://github.com/thinkful-ei26/DothraKIT-Client-Nikkie-Sam'
+        link: 'https://slpst.herokuapp.com/',
+        git: 'https://github.com/thinkful-ei26/sam-sst-client'
       },
       {
         title: 'DothraKit',
