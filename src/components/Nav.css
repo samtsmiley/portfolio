@@ -12,13 +12,11 @@
 }
  
 #menuSlider.hide {
-  /* transform: translate3d(-100vw, 0, 0); */
   transform: translate3d(-100vw, 0, 0);  
   overflow: hidden;
 }
  
 #menuSlider.show {
-  /* transform: translate3d(0vw, 0, 0); */
   transform: translate3d(0vw, 0, 0);
   overflow: hidden;
 }
@@ -43,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .menuItem {
     display: block;
     width: 100%;

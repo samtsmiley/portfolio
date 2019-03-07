@@ -12,7 +12,6 @@
   max-height: 80px;
 }
 
-
 @media screen and (max-height: 720px) {
   .footer {
     display: none;

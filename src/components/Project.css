@@ -1,10 +1,9 @@
 .project {
-  min-width: 1400px;
+  width: 100%;
   display: inline-block;
   border-bottom: #FFE600  solid 10px;
   margin-bottom: 15px;
 }
-
 
 .projectImgLeft {
   max-width: 500px;
@@ -16,7 +15,6 @@
   width: 60%;
   float: right;
   padding-bottom: 5px;
-  /* text-align: right; */
 }
  
 .projectImgRight {
