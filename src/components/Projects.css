@@ -36,6 +36,12 @@
   margin-bottom: 30px;
 }
 
+@media screen and (min-height: 720px) {
+  .clickSmiley {
+    display: none;
+  }
+ }
+
 @media screen and (max-width: 1000px) {
   #projects.show {
     top: 620px;
