@@ -69,7 +69,7 @@ class AboutMe extends Component {
               </p>
               <h3>Future</h3>
               <p>
-                Working with you, building dynamic websites and apps!
+                Working with you and your team, building dynamic websites and apps!
               </p>
             </div>
           </div>
