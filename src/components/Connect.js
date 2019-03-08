@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Connect.css';
 import github from '../images/github-logo.svg';
 import linkedin from '../images/linkedin-logo.svg'; 
+import resume from '../images/samSmileyResume.pdf';
 
 class Connect extends Component {
 
@@ -28,6 +29,11 @@ class Connect extends Component {
           ref={(input) => this.input = input}
           value='samtsmiley@gmail.com'
         />
+        <p>Here is my &nbsp;
+          <a href={resume} target='blank' rel='noopener noreferrer'>
+            Resume.
+          </a>
+        </p>
         <p>And checkout out my social accounts:</p>
         <div className='socialMediaIcons'>
           <a href='https://github.com/samtsmiley' rel='noopener noreferrer' target='_blank'>
