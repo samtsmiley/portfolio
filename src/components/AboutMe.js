@@ -26,6 +26,7 @@ class AboutMe extends Component {
                   <p>Redux</p>
                   <p>Enzyme</p>
                   <p>jQuery</p>
+                  <p>React Native</p>
                   <p>HTML5</p>
                   <p>CSS3</p>
                 </div>
@@ -33,7 +34,8 @@ class AboutMe extends Component {
                   <h3>Back-End</h3>
                   <p>Node.js</p>
                   <p>MongoDB</p>
-                  <p>Mocha & Chai</p>
+                  <p>Mocha</p>
+                  <p>Chai</p>
                   <p>Passport</p>
                   <p>SQL</p>
                   <p>REST APIs 3</p>
