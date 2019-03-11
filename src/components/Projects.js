@@ -11,7 +11,7 @@ export class Projects extends React.Component {
     const projectData = [
       {
         title: 'Game-A-Tron',
-        desc: '   Game-A-Tron is a web application that helps people to gamify their lives. Players can create and play games. It was a collaborative project with four of us.',
+        desc: 'Game-A-Tron is a web application that helps people to gamify their lives. Players can create and play games. It was a collaborative project with four of us.',
         tech: 'React, Redux, Node, Express, Mocha/Chai, Enzyme and Mongo',
         me: 'I brought the app concept to the table. I built many front-end components and modified the back end to get proper responses from fetch requests.',
         displayLeft: true,

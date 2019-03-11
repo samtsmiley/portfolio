@@ -23,7 +23,7 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
             <p>{desc}</p>
             <p className='strong'>My Part:</p>
             <p className='indent'>{me}</p>
-            <p className='strong'>Coloaborators:</p>
+            <p className='strong'>Collaborators:</p>
             <p className='indent'>{colab}</p>
             <p className='strong'>Tech:</p>
             <p className='indent'>{tech}</p>
