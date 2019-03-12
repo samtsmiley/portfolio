@@ -45,7 +45,7 @@ class AboutMe extends Component {
                   <p>Git</p>
                   <p>GitHub</p>
                   <p>NPM</p>
-                  <p>Travis Cl</p>
+                  <p>Travis CI</p>
                   <p>MongoDB Atlas</p>
                   <p>Postman</p>
                 </div>
