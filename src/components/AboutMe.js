@@ -37,7 +37,7 @@ class AboutMe extends Component {
                   <p>Mocha</p>
                   <p>Chai</p>
                   <p>Passport</p>
-                  <p>SQL</p>
+                  <p>PostgreSQL</p>
                   <p>REST APIs 3</p>
                 </div>
                 <div className="skillsColumnA">
@@ -56,7 +56,7 @@ class AboutMe extends Component {
               <p>
                 Growing up in South Carolina I studied to pursue a career in engineering. After attending Virginia 
                 Tech for a few semesters I became restless. As John Muir said, "The Mountains are calling and I must go."
-                I left the university and moved to a little ski town called Steamboat Springs, Colorado. There, 
+                I left Virginia and moved to a little ski town called Steamboat Springs, Colorado. There, 
                 my love for the outdoors was satisfied and I found a job that complimented my aptitudes. 
                 I became a Ski Lift Mechanic. After a great run living in the mountains, my wife and I 
                 moved to Portland, OR to experience the city life. Working a few different manufacturing 
