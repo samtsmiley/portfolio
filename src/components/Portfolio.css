@@ -1,0 +1,13 @@
+#projects {
+  margin:auto;
+  max-width: 1400px;
+  width: 100%;
+}
+.projectsTitle {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 30px;
+
+}
+
+

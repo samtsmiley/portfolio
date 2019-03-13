@@ -2,33 +2,42 @@ import React, { Component } from 'react';
 import './Homepage.css';
 import Nav from './Nav';
 import AboutMe from './AboutMe'
-import Projects from './Projects'
+import Portfolio from './Portfolio'
 import Connect from './Connect'
 import SmileyButton from './SmileyButton'
+import Footer from './Footer';
+import Intro from './Intro';
 
 class Homepage extends Component {
 
   constructor(props){
-    super(props);
-    this.state={
-      AboutMe:false,
-      Projects: true,
-      Connect:false,
-      visible: false
-    };
-
+    super(props)
+    this.connect = React.createRef();
+    this.aboutMe = React.createRef();
+    this.portfolio = React.createRef();
+    this.scrollToConnect = this.scrollToConnect.bind(this);
+    this.scrollToAboutMe = this.scrollToAboutMe.bind(this);
+    this.scrollToPortfolio = this.scrollToPortfolio.bind(this);
+    this.state={visible: false};
     this.handleMouseDown = this.handleMouseDown.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
     this.offMenuMouseDown = this.offMenuMouseDown.bind(this);
-    this.handleAboutMeMouseDown = this.handleAboutMeMouseDown.bind(this);
-    this.handlePortfolioMouseDown = this.handlePortfolioMouseDown.bind(this);
-    this.handleConnectMouseDown = this.handleConnectMouseDown.bind(this);
-
+  }
+ 
+  scrollToConnect() {
+    this.connect.current.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
   
+  scrollToAboutMe() {
+    this.aboutMe.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
+
+  scrollToPortfolio(){
+    this.portfolio.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
+
   handleMouseDown(e) {
     this.toggleMenu();
-    console.log("clicked");
     e.stopPropagation();
   }
 
@@ -40,29 +49,7 @@ class Homepage extends Component {
     if (this.state.visible) this.setState({visible: false}); 
   }
 
-  handleAboutMeMouseDown(){
-    this.setState({
-      AboutMe: true,
-      Projects: false,
-      Connect: false,
-    });
-  }
 
-  handlePortfolioMouseDown(){
-    this.setState({
-      AboutMe: false,
-      Projects: true,
-      Connect: false,
-    });
-  }
-
-  handleConnectMouseDown(){
-    this.setState({
-      AboutMe: false,
-      Projects: false,
-      Connect: true,
-    });
-  }
   render() {
     return (
       <div className='homepage' onMouseDown={this.offMenuMouseDown}>
@@ -73,23 +60,17 @@ class Homepage extends Component {
         <Nav 
           handleMouseDown={this.handleMouseDown}
           menuVisibility={this.state.visible}
-          handleAboutMeMouseDown={this.handleAboutMeMouseDown}
-          handlePortfolioMouseDown={this.handlePortfolioMouseDown}
-          handleConnectMouseDown={this.handleConnectMouseDown}/>
-        <div className='homepageImage'/>
-          <div className="headerContent">
-            <h1 className='samHeader'>Sam Smiley</h1>
-          </div>
-          <div className='me'>
-            <span className='outdoor'>Outdoor Enthusiast</span> 
-            <span className='WD'>
-              <span className='web'>Web</span>
-              <span className='dev'> Developer</span>
-            </span>
-          </div>
-        <AboutMe aboutMeVisibility={this.state.AboutMe}/>
-        <Projects projectsVisibility={this.state.Projects}/>
-        <Connect connectVisibility={this.state.Connect}/>
+          handleAboutMeMouseDown={this.scrollToAboutMe}
+          handlePortfolioMouseDown={this.scrollToPortfolio}
+          handleConnectMouseDown={this.scrollToConnect}
+          />
+        <Intro />  
+        <AboutMe ref={this.aboutMe}/>
+        <div className='break'/>
+        <Portfolio  ref={this.portfolio}/>
+        <div className='break'/>
+        <Connect ref={this.connect} />
+        <Footer />
       </div>
     );
   }

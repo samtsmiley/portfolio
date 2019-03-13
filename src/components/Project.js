@@ -1,6 +1,8 @@
 import React from 'react'
 import './Project.css';
-
+import redux from '../images/redux.png' 
+import enzyme from '../images/enzyme.png' 
+import rest from '../images/rest.png' 
 
 export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id }) => {
   const whichImgdisplay = displayLeft
@@ -14,22 +16,34 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
     return (
       <div >
         <div className='project' key={id}>
-          <img className={whichImgdisplay}  src={image} alt=''/>
+          <a href={link} rel='noopener noreferrer' target='_blank'>
+            <img className={whichImgdisplay}  src={image} alt=''/>    
+          </a>
           <div className={whichProjectDisplay} >
-            <a href={link} rel='noopener noreferrer' target='_blank' 
-            className='projectTitle strong'>
-                {title}
-            </a> 
-            <p>{desc}</p>
+            <p className='projectTitle strong'>
+              {title}
+              <a href={git} rel='noopener noreferrer' target='_blank' className='projectGitHubLink'>
+                <i className="devicon-github-plain colored projectTitle"></i> 
+              </a>
+            </p> 
+            <p className='projectDesc'>{desc}</p>
             <p className='strong'>My Part:</p>
-            <p className='indent'>{me}</p>
+            <p>{me}</p>
             <p className='strong'>Collaborators:</p>
-            <p className='indent'>{colab}</p>
-            <p className='strong'>Tech:</p>
-            <p className='indent'>{tech}</p>
-            <a href={git} rel='noopener noreferrer' target='_blank' className='gitHubLink'>
-                GitHub repo
-            </a> 
+            <p>{colab}</p>
+            <p className='strong'>Tech: 
+            <i className="devicon-javascript-plain colored"></i>
+            <i className="devicon-react-original colored"></i>
+            <img className='icon' src={redux} alt='redux png'/>
+            <img className='icon' src={enzyme} alt='enzyme png'/>
+            <i className="devicon-html5-plain colored"></i>
+            <i className="devicon-css3-plain colored"></i>
+            <i className="devicon-mongodb-plain colored"></i>
+            <i className="devicon-mocha-plain colored"></i>
+            <i className="devicon-express-original colored"></i>
+            <img className='icon' src={rest} alt='rest png'/>
+            </p>
+            {/* <p>{tech}</p> */}
           </div>
       </div>
      </div>

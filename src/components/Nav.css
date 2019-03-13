@@ -12,7 +12,7 @@
 }
  
 #menuSlider.hide {
-  transform: translate3d(-100vw, 0, 0);  
+  transform: translate3d(-110vw, 0, 0);  
   overflow: hidden;
 }
  
@@ -35,9 +35,9 @@
 }
 
 
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   #menuSlider {
-    max-width: calc(((100% - 1800px)/2) + 1800px);
+    max-width: calc(((100% - 1600px)/2) + 1600px);
   }
 }
 

@@ -1,13 +1,12 @@
 import React from "react";
-import './Projects.css';
+import './Portfolio.css';
 import Project from './Project'
 import slpst from '../images/slpst.svg'
 import game from '../images/game.svg'
 import dothrakit from '../images/dothrakit.svg'
 
-export class Projects extends React.Component {
+const Portfolio = React.forwardRef((props, ref)=>{
 
-  render() {
     const projectData = [
       {
         title: 'Game-A-Tron',
@@ -25,7 +24,7 @@ export class Projects extends React.Component {
         title: 'DothraKit',
         desc: 'With the final season of GOT coming out it\'s time to brush up on your Dothraki phrases! DothraKIT uses a spaced repetition algorithm to ensure you are learning efficiently. The rules are simple: learn the word, get it right, you live. Or else...well, best not to get on Khal\'s bad side. You can log in with username: Sammy, password: 0123456789. This app was built in a week.',
         tech: 'React, Redux, Node, Express, Mocha/Chai, Enzyme, and Mongo',
-        me: 'With just one partner on this project, we shared a lot of the responsibilities.',
+        me: 'With just one partner on this project, we shared many of the responsibilities.',
         displayLeft: false,
         colab: 'Nikkie Mashian',
         image: dothrakit,
@@ -34,7 +33,7 @@ export class Projects extends React.Component {
       }, 
       {
         title: 'SLP Student Tracker',
-        desc: 'SLP Student Tracker is an app made for Speech Language Pathologists to keep track of students by recording a SOAP note. With a history of notes, a visual graph will show students progress. This app was built in 2 weeks',
+        desc: 'SLP Student Tracker is an app made for Speech Language Pathologists to keep track of students by recording a SOAP note. With a history of notes, a visual graph will show students progress. This app was built in 2 weeks.',
         tech: 'React, Redux, Node, Express, Mocha/Chai, and Mongo',
         me: 'All of it. I am in the process of refactoring this app using React Hooks for state management.',
         colab: 'Just Me',
@@ -50,20 +49,12 @@ export class Projects extends React.Component {
       return <Project key={index} {...project} iScored={true}/>
     })
     
-    var projectsVisibility = 'hide';
- 
-    if (this.props.projectsVisibility) {
-      projectsVisibility = 'show';
-    }
-      
     return (
-      <section  id='projects' className={projectsVisibility}>
+      <section className='content' ref={ref} id='projects' >
         <h2 className='projectsTitle'>My Recent Projects</h2>
         {projects}
-        <p className='clickSmiley'>Click the Smiley Face for more ;)</p>
       </section>
     );
-  }
-}
+});
 
-export default Projects;
+export default Portfolio;
