@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import './SmileyButton.css';
 import smiley from '../images/smiley.svg'
 import superSmiley from '../images/superSmiley.svg'
- 
+// import hamSmiley from '../images/hamSmiley.svg'
+
 class SmileyButton extends Component {
   constructor(props){
     super(props);
@@ -18,12 +19,14 @@ class SmileyButton extends Component {
   onMouseLeave() {
     this.setState({menuImg: `${smiley}`});
   }
+  
   render() {
     return (
       <img  className='smileyButton' src={this.state.menuImg} height="100" 
         onMouseDown={this.props.handleMouseDown} 
         onMouseLeave={() => this.onMouseLeave()} 
-        onMouseOver={()=>this.onMouseEnter()} alt='logo'/>
+        onMouseOver={()=>this.onMouseEnter()} alt='logo'
+      />
     );
   }
 }

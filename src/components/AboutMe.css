@@ -1,35 +1,14 @@
 #aboutMe {
-  position: absolute;
-  transition: transform 1.5s
-              cubic-bezier(0, .25, 0, 1);
-  transition-delay: .5s;
-  overflow: scroll;
-  z-index: -2;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 3%;
-  right: 3%;
-  border: #FFE600 solid 10px;
-  border-radius: 5px;
+  padding-top:40spx;
   text-align: center;
-  margin-bottom: 100px;
-
-}
-   
-#aboutMe.hide {
-  transform: translateY(-950px);
-  overflow: hidden;
-}
-
-#aboutMe.show {
-  transform: translateY(-10px);
-  overflow: hidden;
+  margin:auto;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .intro {
   font-size: 200%;
-  padding-top:75px;
+  padding-top: 25px;
   padding-bottom:5px;
   text-decoration: underline;
 }
@@ -52,7 +31,7 @@
   border-right: #FFE600 solid 7px;
   border-left: #FFE600 solid 7px;
   margin-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 
 }
   
@@ -62,48 +41,64 @@
   display: table;
   clear: both;
 }
-
+.icon {
+  max-height: 20px;
+}
 .about {
   text-align: left;
   padding: 5px;
 }
-
-@media screen and (max-height: 720px) {
-  .footer {
-    display: none;
-  }
- }
-
-@media screen and (max-width: 1000px) {
-  #aboutMe.hide {
-    transform: translateY(-1400px);
-  }
-  #aboutMe.show {
-    transform: translateY(-10px);
-  }
-  .intro {
-    padding-top:120px;
-  }
+.me {
+  display: block;
+overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -35px;
+  min-height: 100%;
+	max-width: 1000px;
+	background-color: rgb(5, 77, 41);
+	border-radius: 10px;
+	font-size: 300%;
+	padding: 10px;
 }
 
-@media screen and (max-width: 520px) {
-  #aboutMe.hide {
-    transform: translateY(-2200px);
-  }
-  #aboutMe.show {
-    transform: translateY(-10px);
-  }
-  .intro {
-    padding-top:240px;
-  }
+.outdoor {
+	font-family: outdoorFont;
+	float: left; 
+  color: snow;  
+}
+
+.WD {
+	font-family: 'Courier New', Courier, monospace;
+	float: right;
+}
+
+.web{
+	color: rgb(175, 182, 245)
+}
+
+.dev {
+	color: rgb(141, 230, 148)	
+}
+
+@media screen and (max-width: 655px) {
   .skillsColumnA {
     display: block;
-    width: 100%
+    width: 100%;
+    border-bottom: #FFE600 solid 10px;
   }
   .skillsColumnB {
     display: block;
     width: 100%;
     border: none;
+    border-bottom: #FFE600 solid 10px;
+    padding-bottom: 10px;
   }
 }
 
+@media screen and (max-width: 370px) {
+  .intro {
+    font-size: 160%;
+
+  }
+}

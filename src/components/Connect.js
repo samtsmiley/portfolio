@@ -1,34 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Connect.css';
 import github from '../images/github-logo.svg';
 import linkedin from '../images/linkedin-logo.svg'; 
 import resume from '../images/samSmileyResume.pdf';
+// import gmail from '../images/gmail.png';
 
-class Connect extends Component {
+const Connect = React.forwardRef((props, ref)=>{
 
-  copyToClipboard = (e) => {
-    this.input.select();
-    document.execCommand('copy');
-    e.target.focus();
-    alert('samtsmiley@gmail.com coppied to clipboard');
-  };
-  
-  render() {
-    var connectVisibility = 'hide';
- 
-    if (this.props.connectVisibility) {
-      connectVisibility = 'show';
-    }
     return (
-      <section id='connect' className={connectVisibility}>
+    <section ref={ref} className='content' id='connect'>
         <h2 className='connectTitle'>Connect</h2>
         <p>Feel free to email me:</p>
-        <input
-          onClick={this.copyToClipboard}
-          readOnly
-          ref={(input) => this.input = input}
-          value='samtsmiley@gmail.com'
-        />
+          <a href='mailto:samtsmiley@gmail.com'>
+          {/* <img className='icon' src={gmail} alt='npm png'/>  */}
+           samtsmiley@gmail.com
+          </a>
         <p>Here is my &nbsp;
           <a href={resume} target='blank' rel='noopener noreferrer'>
             Resume.
@@ -46,6 +32,6 @@ class Connect extends Component {
       </section>
     );
   }
-}
+);
 
 export default Connect;

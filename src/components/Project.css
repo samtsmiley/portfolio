@@ -7,60 +7,71 @@
 
 .strong {
   font-weight: bold;
+  padding-top: 15px;
 }
 
-/* .indent {
-  margin-left: 15px
-} */
+.projectDesc {
+  padding-top: 10px;
+}
 
 .projectImgLeft {
-  max-width: 500px;
-  width: 40%;
+  max-width: 40%;
   float: left;
+  height: 100%;
+  vertical-align: middle;
 }
  
 .projectAboutRight {
-  width: 60%;
+  max-width: 60%;
   float: right;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
  
 .projectImgRight {
-  max-width: 500px;
-  width: 40%;
+  max-width: 40%;
   float: right;
+  height: 100%;
+  vertical-align: middle;
 }
   
 .projectAboutLeft {
-  width: 60%;
+  max-width: 60%;
   float: left;
   padding-bottom: 5px;
 }
 
 .projectTitle {
-  font-size: 150%;
+  font-size: 250%;
 }
 
-.gitHubLink {
-  font-size: 120%;
+.projectGitHubLink {
+  font-size: 40%;
   padding-left: 20px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
-  .project {
-    min-height: 204px;
-    border-bottom: #FFE600  solid 10px;
-  }
   .projectImgLeft {
-    width: 100%;
+    max-width: 100%;
   } 
   .projectAboutRight {
-    width: 100%;
+    max-width: 100%;
   }
   .projectImgRight {
-    width: 100%;
+    max-width: 100%;
   }
   .projectAboutLeft {
-    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projectImgRight {
+    max-height: 200px;
+    vertical-align: middle;
+  }
+  .projectImgLeft {
+    max-height: 200px;
+    vertical-align: middle;
   }
 }
