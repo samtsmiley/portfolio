@@ -22,8 +22,10 @@
 
 .samHeader {
   position: absolute;
-  bottom: 1em;
-  left: 1em;
+  bottom: 10%;
+  left: 12%;
+  color: white;
+  text-shadow: 4px 4px black;
 }
 
 
