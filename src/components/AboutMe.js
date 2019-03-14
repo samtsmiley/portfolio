@@ -51,6 +51,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
               <p><i className="devicon-travis-plain colored"></i> Travis CI</p>
               <p><i className="devicon-mongodb-plain"></i> MongoDB Atlas</p>
               <p><img className='icon' src={postman} alt='postman png'/> Postman</p>
+              <p><i class="devicon-heroku-original colored"></i> Heroku</p>
             </div>
           </div>
         </div>
