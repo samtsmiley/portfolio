@@ -70,7 +70,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
           <p>
             I enrolled in Thinkful's Engineering Immersion to become a software developer. I gained the 
             skills to do what I love, Build and Maintain. Only this time the tools and materials are 
-            programming languages and computers instead of wrenches and steel. All it takes is time, logic, 
+            computers and programming languages instead of wrenches and steel. All it takes is time, logic, 
             and creativity, the possibilities are endless.
           </p>
           <h3>Future</h3>
