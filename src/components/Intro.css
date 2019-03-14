@@ -29,3 +29,9 @@
 }
 
 
+@media screen and (max-width: 500px) {
+  .samHeader {
+    left: 5%;
+  }
+}
+
