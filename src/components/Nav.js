@@ -14,9 +14,9 @@ class Nav extends Component {
            onMouseDown={this.props.handleMouseDown} 
            className={visibility}>
         <h2 className='menuItems'>
-          <span className='menuItem' ontouchstart={() => this.props.handleAboutMeMouseDown()} onMouseDown={() => this.props.handleAboutMeMouseDown()}>About Me</span>
-          <span className='menuItem' ontouchstart={() => this.props.handlePortfolioMouseDown()} onMouseDown={() => this.props.handlePortfolioMouseDown()}>Portfolio</span>
-          <span className='menuItem' ontouchstart={() => this.props.handleConnectMouseDown()} onMouseDown={() => this.props.handleConnectMouseDown()}>Connect</span>
+          <span className='menuItem' onTouchStart={() => this.props.handleAboutMeMouseDown()} onMouseDown={() => this.props.handleAboutMeMouseDown()}>About Me</span>
+          <span className='menuItem' onTouchStart={() => this.props.handlePortfolioMouseDown()} onMouseDown={() => this.props.handlePortfolioMouseDown()}>Portfolio</span>
+          <span className='menuItem' onTouchStart={() => this.props.handleConnectMouseDown()} onMouseDown={() => this.props.handleConnectMouseDown()}>Connect</span>
         </h2>
       </div>
     );
