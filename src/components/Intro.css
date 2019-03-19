@@ -29,9 +29,12 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .samHeader {
     left: 5%;
+  }
+  .homepageImage {
+    /* background: url('../images/smallBG.jpg');  */
   }
 }
 
