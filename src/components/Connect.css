@@ -35,3 +35,7 @@ input:hover {
   height: 100%;
   padding:20px;
 }
+
+.socialMediaIcon:hover {
+  filter: invert(20%);
+}
