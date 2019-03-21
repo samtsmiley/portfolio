@@ -5,6 +5,10 @@
   /* margin-bottom: 15px; */
 }
 
+.noUnderline{
+  text-decoration: none;
+}
+
 .strong {
   font-weight: bold;
   padding-top: 15px;

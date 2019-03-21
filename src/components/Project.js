@@ -21,7 +21,9 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
           </a>
           <div className={whichProjectDisplay} >
             <p className='projectTitle strong'>
-              {title}
+              <a href={link} rel='noopener noreferrer' target='_blank' className='noUnderline'>
+                {title}
+              </a>
               <a href={git} rel='noopener noreferrer' target='_blank' className='projectGitHubLink'>
                 <i className="devicon-github-plain colored projectTitle"></i> 
               </a>
