@@ -31,7 +31,7 @@ export default ({title, desc, tech, displayLeft, image, me, colab, git, link, id
             <p className='projectDesc'>{desc}</p>
             <p className='strong'>My Part:</p>
             <p>{me}</p>
-            <p className='strong'>Collaborrrrrrators:</p>
+            <p className='strong'>Collaborators:</p>
             <p>{colab}</p>
             <p className='strong'>Tech: 
             <i className="devicon-javascript-plain colored"></i>
