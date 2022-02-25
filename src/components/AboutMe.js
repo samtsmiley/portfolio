@@ -64,14 +64,18 @@ const AboutMe = React.forwardRef((props, ref)=>{
             my love for the outdoors was satisfied and I found a job that complimented my aptitudes. 
             I became a Ski Lift Mechanic. After a great run living in the mountains, my wife and I 
             moved to Portland, OR to experience the city life. Working a few different manufacturing 
-            jobs I needed something more challenging, it was time for a career change.
+            jobs I needed something more challenging, it was time for a career change.I enrolled in 
+            Thinkful's Engineering Immersion to become a software developer. I gained the 
+            skills to do what I love, Build and Maintain. Only this time the tools and materials are 
+            computers and programming languages instead of wrenches and steel. All it takes is time,
+            logic, and creativity, the possibilities are endless.
           </p>
           <h3>Present</h3>
           <p>
-            I enrolled in Thinkful's Engineering Immersion to become a software developer. I gained the 
-            skills to do what I love, Build and Maintain. Only this time the tools and materials are 
-            computers and programming languages instead of wrenches and steel. All it takes is time, logic, 
-            and creativity, the possibilities are endless.
+            As a Software Engineer at Compu-Tech-Inc. I get to help streamline data flow of fruit from 
+            the farm to your local grocery store. I am currently developing web applications for users 
+            to track fruit quality, warehouse inventory, and managing sales. I enjoy building pleasing
+            ux/ui for users, performant backend and an optimal database.
           </p>
           <h3>Future</h3>
           <p>
