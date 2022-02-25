@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutMe.css';
 import redux from '../images/redux.png' 
 import enzyme from '../images/enzyme.png' 
+import ibmi from '../images/ibmi.svg' 
 import npm from '../images/npmlogo.png' 
 import postman from '../images/postman.png' 
 import rest from '../images/rest.png' 
@@ -42,6 +43,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
               <p><i className="devicon-express-original colored"></i> Express</p>
               <p><i className="devicon-postgresql-plain colored"></i> PostgreSQL</p>
               <p><img className='icon' src={rest} alt='rest png'/> REST APIs 3</p>
+              <p><img className='icon' src={ibmi} alt='ibmi png'/>RPGIV DB2</p>
             </div>
             <div className="skillsColumnA">
               <h3>Dev Tools</h3>
