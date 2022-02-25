@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutMe.css';
 import redux from '../images/redux.png' 
 import enzyme from '../images/enzyme.png' 
-import ibmi from '../images/ibmi.svg' 
+import ibmi from '../images/ibmi.png' 
 import npm from '../images/npmlogo.png' 
 import postman from '../images/postman.png' 
 import rest from '../images/rest.png' 
